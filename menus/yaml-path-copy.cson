@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle yaml-path-copy'
+      'command': 'yaml-path-copy:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'yaml-path-copy'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'yaml-path-copy:toggle'
+        }
+      ]
+    ]
+  }
+]

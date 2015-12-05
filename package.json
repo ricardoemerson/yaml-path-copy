@@ -1,0 +1,22 @@
+{
+  "name": "yaml-path-copy",
+  "main": "./lib/yaml-path-copy",
+  "version": "0.1.0",
+  "description": "Copy a full path of parent yaml key, from selected line.",
+  "keywords": [
+    "yaml",
+    "copy",
+    "clipboard",
+    "key"
+  ],
+  "activationCommands": {
+    "atom-workspace": "yaml-path-copy:toggle"
+  },
+  "repository": "https://github.com/atom/yaml-path-copy",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
