@@ -21,19 +21,6 @@ class YamlPathCopyView
   getElement: ->
     @element
 
-  updateYamlPath: ->
-    grammar = @activeTextEditor()?.getGrammar?()
-    if grammar?
-      if grammar is atom.grammars.nullGrammar
-        grammarName = 'Plain Text'
-      else
-        grammarName = grammar.name ? grammar.scopeName
-
-    if grammarName == 'YAML'
-      @textContent = @getParentPath()
-    else
-      @textContent = "Not supported"
-
   activeTextEditor: ->
     atom.workspace.getActiveTextEditor()
 
@@ -69,7 +56,7 @@ class YamlPathCopyView
 
   getParentPath: ->
     # get first non-space character position
-      # get current line number
+    # get current line number
     currentCursorPosition = @activeTextEditor().getCursorBufferPosition()
     currentCursorRow = currentCursorPosition["row"]
     currentCursorColumn = currentCursorPosition["column"]
