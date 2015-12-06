@@ -12,7 +12,7 @@
   "activationCommands": {
     "atom-workspace": "yaml-path-copy:toggle"
   },
-  "repository": "https://github.com/atom/yaml-path-copy",
+  "repository": "https://github.com/ricardoemerson/yaml-path-copy.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

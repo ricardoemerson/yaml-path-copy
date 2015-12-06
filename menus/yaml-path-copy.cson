@@ -2,7 +2,7 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle yaml-path-copy'
+      'label': 'Copy current yaml path to clipboard'
       'command': 'yaml-path-copy:toggle'
     }
   ]
@@ -13,7 +13,7 @@
       'label': 'yaml-path-copy'
       'submenu': [
         {
-          'label': 'Toggle'
+          'label': 'Copy current yaml path to clipboard'
           'command': 'yaml-path-copy:toggle'
         }
       ]

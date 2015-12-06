@@ -8,7 +8,6 @@ module.exports = YamlPathCopy =
 
   activate: (state) ->
     @yamlPathCopyView = new YamlPathCopyView(state.yamlPathCopyViewState)
-    @modalPanel = atom.workspace.addModalPanel(item: @yamlPathCopyView.getElement(), visible: false)
 
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
@@ -17,7 +16,6 @@ module.exports = YamlPathCopy =
     @subscriptions.add atom.commands.add 'atom-workspace', 'yaml-path-copy:toggle': => @toggle()
 
   deactivate: ->
-    @modalPanel.destroy()
     @subscriptions.dispose()
     @yamlPathCopyView.destroy()
 
@@ -25,9 +23,12 @@ module.exports = YamlPathCopy =
     yamlPathCopyViewState: @yamlPathCopyView.serialize()
 
   toggle: ->
-    console.log 'YamlPathCopy was toggled!'
+    editor = atom.workspace.getActiveTextEditor()
+    unless editor.getGrammar().scopeName.match("yaml")
+      return atom.notifications.addError("Only use source.yaml")
 
-    if @modalPanel.isVisible()
-      @modalPanel.hide()
-    else
-      @modalPanel.show()
+    yamlPath = @yamlPathCopyView.getParentPath()
+    console.log "Yaml-path copied to clipboard. #{yamlPath}"
+    displayText = "This path '#{yamlPath}' was copied to clipboard."
+    atom.notifications.addSuccess(displayText)
+    atom.clipboard.write(yamlPath)
