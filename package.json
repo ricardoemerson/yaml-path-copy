@@ -1,7 +1,7 @@
 {
   "name": "yaml-path-copy",
   "main": "./lib/yaml-path-copy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Copy a full path of parent yaml key, from selected line.",
   "keywords": [
     "yaml",
@@ -17,6 +17,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
