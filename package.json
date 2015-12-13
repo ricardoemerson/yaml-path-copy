@@ -1,18 +1,23 @@
 {
   "name": "yaml-path-copy",
   "main": "./lib/yaml-path-copy",
-  "version": "0.2.0",
-  "description": "Copy a full path of parent yaml key, from selected line.",
+  "version": "1.0.0",
+  "description": "Copy or displays a full parent path of the current yaml key.",
   "keywords": [
     "yaml",
+    "display",
     "copy",
     "clipboard",
     "key"
   ],
   "activationCommands": {
-    "atom-workspace": "yaml-path-copy:toggle"
+    "atom-workspace": "yaml-path-copy:toggle",
+    "atom-workspace": "yaml-path-copy:displayPath"
   },
-  "repository": "https://github.com/ricardoemerson/yaml-path-copy.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardoemerson/yaml-path-copy.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

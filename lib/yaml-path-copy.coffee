@@ -14,6 +14,7 @@ module.exports = YamlPathCopy =
 
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'yaml-path-copy:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'yaml-path-copy:displayPath': => @displayPath()
 
   deactivate: ->
     @subscriptions.dispose()
@@ -25,10 +26,20 @@ module.exports = YamlPathCopy =
   toggle: ->
     editor = atom.workspace.getActiveTextEditor()
     unless editor.getGrammar().scopeName.match("yaml")
-      return atom.notifications.addError("Only use source.yaml")
+      return atom.notifications.addError("yaml-path-copy just can be used with source.yaml")
 
     yamlPath = @yamlPathCopyView.getParentPath()
-    console.log "Yaml-path copied to clipboard. #{yamlPath}"
-    displayText = "This path '#{yamlPath}' was copied to clipboard."
-    atom.notifications.addSuccess(displayText)
+    console.log "Yaml-path copied to clipboard: #{yamlPath}"
+    displayText = "This parent path was copied to clipboard."
+    atom.notifications.addSuccess(displayText, { detail: yamlPath, dismissable: true })
     atom.clipboard.write(yamlPath)
+
+  displayPath: ->
+    editor = atom.workspace.getActiveTextEditor()
+    unless editor.getGrammar().scopeName.match("yaml")
+      return atom.notifications.addError("yaml-path-copy just can be used with source.yaml")
+
+    yamlPath = @yamlPathCopyView.getParentPath()
+    console.log "Yaml-path current parent path: #{yamlPath}"
+    displayText = "This is your current parent path."
+    atom.notifications.addInfo(displayText, { detail: yamlPath, dismissable: true })
