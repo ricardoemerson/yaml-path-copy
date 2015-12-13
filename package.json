@@ -1,7 +1,7 @@
 {
   "name": "yaml-path-copy",
   "main": "./lib/yaml-path-copy",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Copy or displays a full parent path of the current yaml key.",
   "keywords": [
     "yaml",
@@ -11,7 +11,6 @@
     "key"
   ],
   "activationCommands": {
-    "atom-workspace": "yaml-path-copy:toggle",
     "atom-workspace": "yaml-path-copy:displayPath"
   },
   "repository": {
