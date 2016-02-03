@@ -54,6 +54,12 @@ class YamlPathCopyView
         tmpRow -= 1
     [parentWord, parentRow] = [@getYamlKeyOnSpecifiedRow(tmpRow), tmpRow]
 
+  removePipe: (word) ->
+    parentWord = word.split('|')[0]
+
+  removeConectorE: (word) ->
+    parentWord = word.split('&')[0]
+
   getParentPath: ->
     # get first non-space character position
     # get current line number
@@ -68,6 +74,18 @@ class YamlPathCopyView
       tmpRow = currentCursorRow
       while tmpRow > 0
         [parentWord, parentRow] = @getParent(tmpRow, currentCursorColumn)
+
+        console.log("parentWord: #{parentWord}")
+
+        # Skip comment code from begining of Yaml file.
+        if parentWord[0] is '#'
+          tmpRow -= 1
+          continue
+
+        # Ignores the characters '|' and '&'
+        parentWord = @removePipe parentWord
+        parentWord = @removeConectorE parentWord
+
         parrentSentence.push parentWord
         tmpRow = parentRow
       parrentSentence = parrentSentence.reverse().join(".")
