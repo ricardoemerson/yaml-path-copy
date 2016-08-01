@@ -30,7 +30,7 @@ module.exports = YamlPathCopy =
 
     yamlPath = @yamlPathCopyView.getParentPath()
     console.log "Yaml-path copied to clipboard: #{yamlPath}"
-    displayText = "This parent path was copied to clipboard."
+    displayText = "This yaml-path was copied to clipboard."
     atom.notifications.addSuccess(displayText, { detail: yamlPath, dismissable: true })
     atom.clipboard.write(yamlPath)
 
@@ -40,6 +40,6 @@ module.exports = YamlPathCopy =
       return atom.notifications.addError("yaml-path-copy just can be used with source.yaml")
 
     yamlPath = @yamlPathCopyView.getParentPath()
-    console.log "Yaml-path current parent path: #{yamlPath}"
-    displayText = "This is your current parent path."
+    console.log "Yaml-path current path: #{yamlPath}"
+    displayText = "This is your current yaml-path."
     atom.notifications.addInfo(displayText, { detail: yamlPath, dismissable: true })

@@ -2,11 +2,11 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Copy current yaml parent path to clipboard'
+      'label': 'Copy current yaml path to clipboard'
       'command': 'yaml-path-copy:toggle'
     }
     {
-      'label': 'Display current yaml parent path'
+      'label': 'Display current yaml path'
       'command': 'yaml-path-copy:displayPath'
     }
   ]
@@ -17,11 +17,11 @@
       'label': 'Yaml Path Copy'
       'submenu': [
         {
-          'label': 'Copy current yaml parent path to clipboard'
+          'label': 'Copy current yaml path to clipboard'
           'command': 'yaml-path-copy:toggle'
         }
         {
-          'label': 'Display current yaml parent path'
+          'label': 'Display current yaml path'
           'command': 'yaml-path-copy:displayPath'
         }
       ]
