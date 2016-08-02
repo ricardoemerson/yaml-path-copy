@@ -1,7 +1,7 @@
 {
   "name": "yaml-path-copy",
   "main": "./lib/yaml-path-copy",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Copy or displays a full path of the current yaml key.",
   "keywords": [
     "yaml",
@@ -22,7 +22,7 @@
     "atom": ">=1.0.0 <=2.9.9"
   },
   "dependencies": {},
-  "readme": "# Yaml Path Copy package for Atom editor\n\nAtom editor package to copy or displays a full path of the current yaml key.\n\n# Functionality\nThere are two ways to get information about current path of yaml key.\n\n## Displays Current Parent Path\nIf you just want displays the current path of yaml key.\n\n* Keyboard Shortcut: `ctrl-alt-i`\n* Package Menu: `Packages > Yaml Path Copy > Display current yaml path`\n* Context Menu: `Display current yaml path`\n\n![yaml-path-copy](http://res.cloudinary.com/ricardoemerson/image/upload/v1450045437/atom-packages/yaml-path-copy/yaml-path-copy-display.gif)\n\n## Copy Current Parent Path to Clipboard\nTo copy the current path of yaml key to clipboard.\n\n* Keyboard Shortcut: `ctrl-alt-m`\n* Package Menu: `Packages > Yaml Path Copy > Copy current yaml path to clipboard`\n* Context Menu: `Copy current yaml path to clipboard`\n\n![yaml-path-copy](http://res.cloudinary.com/ricardoemerson/image/upload/v1450045418/atom-packages/yaml-path-copy/yaml-path-copy-send.gif)\n",
+  "readme": "# Yaml Path Copy package for Atom editor\n\nAtom editor package to copy or displays a full path of the current yaml key.\n\n# Functionality\nThere are two ways to get information about current path of yaml key.\n\n## Displays Current Path\nIf you just want displays the current path of yaml key.\n\n* Keyboard Shortcut: `ctrl-alt-i`\n* Package Menu: `Packages > Yaml Path Copy > Display current yaml path`\n* Context Menu: `Display current yaml path`\n\n![yaml-path-copy](http://res.cloudinary.com/ricardoemerson/image/upload/v1450045437/atom-packages/yaml-path-copy/yaml-path-copy-display.gif)\n\n## Copy Current Path to Clipboard\nTo copy the current path of yaml key to clipboard.\n\n* Keyboard Shortcut: `ctrl-alt-m`\n* Package Menu: `Packages > Yaml Path Copy > Copy current yaml path to clipboard`\n* Context Menu: `Copy current yaml path to clipboard`\n\n![yaml-path-copy](http://res.cloudinary.com/ricardoemerson/image/upload/v1450045418/atom-packages/yaml-path-copy/yaml-path-copy-send.gif)\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/ricardoemerson/yaml-path-copy/issues"

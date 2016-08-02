@@ -12,3 +12,6 @@
 
 ## 2.1.1 - Patch version of Yaml Path Copy.
 * Fix for includes the key of current line when display or copy path.
+
+## 2.1.2 - Patch version of Yaml Path Copy.
+* Update README.md file content.
