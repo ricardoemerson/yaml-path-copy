@@ -11,7 +11,10 @@
     "key"
   ],
   "activationCommands": {
-    "atom-workspace": "yaml-path-copy:copyPath"
+    "atom-workspace": [
+      "yaml-path-copy:copyPath",
+      "yaml-path-copy:displayPath"
+      ]
   },
   "repository": {
     "type": "git",

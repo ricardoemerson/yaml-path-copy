@@ -20,3 +20,6 @@
 ## 2.1.4 - Patch version of Yaml Path Copy.
 * Fixed the problem that only lets you perform copy the path key after the execution of the path display command.
 * Special tanks to @PierreGUI for check this situation and created the fix request.
+
+## 2.1.5 - Patch version of Yaml Path Copy.
+* Fixed Yaml Path Copy commands in package.json.
