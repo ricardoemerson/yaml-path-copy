@@ -1,7 +1,7 @@
 {
   "name": "yaml-path-copy",
   "main": "./lib/yaml-path-copy",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Copy or displays a full path of the current yaml key.",
   "keywords": [
     "yaml",
