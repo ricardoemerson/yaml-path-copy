@@ -23,3 +23,6 @@
 
 ## 2.1.5 - Patch version of Yaml Path Copy.
 * Fixed Yaml Path Copy commands in package.json.
+
+## 2.1.6 - Patch version of Yaml Path Copy.
+* Changed from video to gif files to demonstrate the use of Yaml Path Copy.

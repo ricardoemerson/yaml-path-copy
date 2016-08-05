@@ -12,7 +12,8 @@ If you just want displays the current path of yaml key.
 * Package Menu: `Packages > Yaml Path Copy > Display current yaml path`
 * Context Menu: `Display current yaml path`
 
-[![Displaying the yaml-path of current key.](https://img.youtube.com/vi/PHM3WMSZMJk/0.jpg)](https://www.youtube.com/watch?v=PHM3WMSZMJk)
+![yaml-path-copy](http://res.cloudinary.com/ricardoemerson/image/upload/v1470429409/atom-packages/yaml-path-copy/yaml-path-copy-display.mov.gif)
+
 
 ## Copy Current Path to Clipboard
 To copy the current path of yaml key to clipboard.
@@ -21,4 +22,4 @@ To copy the current path of yaml key to clipboard.
 * Package Menu: `Packages > Yaml Path Copy > Copy current yaml path to clipboard`
 * Context Menu: `Copy current yaml path to clipboard`
 
-[![Copying the yaml-path of current key.](https://img.youtube.com/vi/3gGlYSVIHAQ/0.jpg)](https://www.youtube.com/watch?v=3gGlYSVIHAQ)
+![yaml-path-copy](http://res.cloudinary.com/ricardoemerson/image/upload/v1470428499/atom-packages/yaml-path-copy/yaml-path-copy-send.mov.gif)
