@@ -12,6 +12,11 @@
 
 ## 2.1.1 - Patch version of Yaml Path Copy.
 * Fix for includes the key of current line when display or copy path.
+* Special tanks to @PierreGUI for check this situation and created the fix request.
 
 ## 2.1.2 - Patch version of Yaml Path Copy.
 * Update README.md file content.
+
+## 2.1.4 - Patch version of Yaml Path Copy.
+* Fixed the problem that only lets you perform copy the path key after the execution of the path display command.
+* Special tanks to @PierreGUI for check this situation and created the fix request.
