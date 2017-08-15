@@ -1,6 +1,6 @@
 # Yaml Path Copy package for Atom editor
 
-Atom editor package to copy or displays a full path of the current yaml key.
+Atom editor package to copy or displays a full path of the current yaml key. Only works with files that have a single root key.
 
 # Functionality
 There are two ways to get information about current path of yaml key.
